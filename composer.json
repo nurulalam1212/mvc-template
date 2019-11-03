@@ -1,0 +1,19 @@
+{
+    "name": "vendor/p6",
+    "description": "Description of project p6.",
+    "authors": [
+        {
+            "name": "Nurul",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "illuminate/database": "v6.4.1",
+        "phpunit/phpunit": "8.4.2"
+    },
+    "autoload" :{
+        "psr-4" : {
+            "App\\":"app"
+        }
+    }
+}
