@@ -45,7 +45,7 @@ class App {
     {
         if(isset($_GET["url"]))
         {
-            return $url = explode("/",ltrim(htmlspecialchars($_GET["url"]),"/"));
+            return $url = explode("/",filter_var(ltrim(htmlspecialchars($_GET["url"]),"/"),FILTER_SANITIZE_URL));
         }
     }
 }
